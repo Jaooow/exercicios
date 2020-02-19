@@ -10,6 +10,8 @@
 	<body>
 		<div class = "container-fluid">
 			<h1>Página com Links dos meus exercícios</h1>
+			
+			<a href = "20200219/home.html">Barbearia</a>
 		</div>
 	</body>
 </html>
