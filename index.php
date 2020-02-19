@@ -6,6 +6,19 @@
         <title> Atividades - João Pedro Catarina Conçolaro </title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet"/>
+		
+		<style>
+			a{
+				color:black;
+			}
+			a:houver{
+				text-decoration:none;
+				color:lightblue;
+			}
+			h1{
+				border-bottom: 1px solid black;
+			}
+		</style>
 	</head>
 	<body>
 		<div class = "container-fluid">
