@@ -15,9 +15,9 @@
 					<h1>- Barbearia -</h1>
 					<nav>
 
-						<a href = "form_agendamento.php">Home</a>
+						<a href = "index.php">Home</a>
 						|
-						<a href = "form_agendamento.php">Agendamento</a>
+						<a href = "index.php">Agendamento</a>
 						|
 						<a href = "lista_agendamento.php">Lista Agendamento</a>
 				

@@ -15,9 +15,9 @@
                     <h1>- Barbearia -</h1>
                     <nav>
 
-                        <a href = "form_agendamento.php">Home</a>
+                        <a href = "index.php">Home</a>
                         |
-                        <a href = "form_agendamento.php">Agendamento</a>
+                        <a href = "index.php">Agendamento</a>
                         |
                         <a href = "lista_agendamento.php">Lista Agendamento</a>
                 
@@ -58,12 +58,12 @@
                         </table>
                         ";
             echo'</div>';
-                        echo"<button type=\"submit\" class=\"btn btn-danger\"><a href=\"form_agendamento.php\"> Realizar agendamento </a></button>";
+                        echo"<button type=\"submit\" class=\"btn btn-danger\"><a href=\"index.php\"> Realizar agendamento </a></button>";
                     }
                     else{
                         echo"<h1> Não há agendamentos cadastrados. </h1>";
                         echo"<br/>";
-                        echo"<button type=\"submit\" class=\"btn btn-danger\"><a href=\"form_agendamento.php\"> Realizar agendamento </a></button>";
+                        echo"<button type=\"submit\" class=\"btn btn-danger\"><a href=\"index.php\"> Realizar agendamento </a></button>";
                     }
                 ?>
             <footer>
