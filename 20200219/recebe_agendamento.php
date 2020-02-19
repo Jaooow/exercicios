@@ -10,6 +10,20 @@
     </head>
     <body>
         <div class = "container-fluid"">
+            <header>
+                <p>
+                    <h1>- Barbearia -</h1>
+                    <nav>
+
+                        <a href = "home.html">Home</a>
+                        |
+                        <a href = "index.php">Agendamento</a>
+                        |
+                        <a href = "lista_agendamento.php">Lista Agendamento</a>
+                
+                    </nav>
+                </p>
+			</header>
             <?php
                 $nome=$_POST["nome"];
                 $email=$_POST["email"];
@@ -33,9 +47,9 @@
 
                     file_put_contents("agenda.xml", $xml);
 
-                    echo"<h1> Agendamento realizado com sucesso. </h1>";
+                    echo"<h2> Agendamento realizado com sucesso. </h2>";
 
-                    echo"<a href=\"lista_agendamento.php\"> Consultar agenda </a>";
+                    echo"<button type=\"submit\" class=\"btn btn-dark\"><a href=\"lista_agendamento.php\"> Consultar agenda </a></button>";
                 }
                 else{
                     $agenda=simplexml_load_file("agenda.xml");
@@ -56,17 +70,20 @@
 
                         file_put_contents("agenda.xml", $agenda->asXML());
 
-                        echo"<h1> Agendamento realizado com sucesso. </h1>";
+                        echo"<h2> Agendamento realizado com sucesso. </h2>";
 
                         echo"<a href=\"lista_agendamento.php\"> Consultar agenda </a>";
                     }
                     else{
                         echo"<h2> Já existe cliente agendado no horário selecionado. </h2>";
 
-                        echo"<a href=\"form_agendamento.php\"> Tentar novamente </a>";
+                        echo"<button type=\"submit\" class=\"btn btn-dark\"><a href=\"index.php\"> Tentar novamente </a></button>";
                     }
                 }
             ?>
+            <footer>
+                &copy João Pedro C. Conçolaro.
+            </footer>
         </div>
     </body>
 </html>

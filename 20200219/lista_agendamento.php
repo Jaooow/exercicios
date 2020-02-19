@@ -15,7 +15,7 @@
                     <h1>- Barbearia -</h1>
                     <nav>
 
-                        <a href = "index.php">Home</a>
+                        <a href = "home.html">Home</a>
                         |
                         <a href = "index.php">Agendamento</a>
                         |
@@ -28,7 +28,7 @@
                 <?php
                     if(file_exists("agenda.xml")){
                         echo"
-                            <table class=\"table\" align = \"center\">
+                            <table class=\"table table-dark\" align = \"center\">
                                 <thead>
                                     <tr>
                                         <th scope=\"col\">Nome</th>
@@ -57,17 +57,19 @@
                             </tbody>
                         </table>
                         ";
-            echo'</div>';
-                        echo"<button type=\"submit\" class=\"btn btn-danger\"><a href=\"index.php\"> Realizar agendamento </a></button>";
+            echo'</div>
+                 <div class = "botao">';
+                        echo"<button type=\"submit\" class=\"btn btn-dark\"><a href=\"index.php\"> Realizar agendamento </a></button>";
                     }
                     else{
                         echo"<h1> Não há agendamentos cadastrados. </h1>";
                         echo"<br/>";
-                        echo"<button type=\"submit\" class=\"btn btn-danger\"><a href=\"index.php\"> Realizar agendamento </a></button>";
+                        echo"<button type=\"submit\" class=\"btn btn-dark\"><a href=\"index.php\"> Realizar agendamento </a></button>
+                 </div>";
                     }
                 ?>
             <footer>
-                Desenvolvido na aula de WEB.
+                &copy João Pedro C. Conçolaro.
             </footer>
         </div>
     </body>

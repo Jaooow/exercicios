@@ -1,25 +1,31 @@
 body{
-    background-image: ("imagens/wallpaper.jpeg");
+    background-size: 100%;
+    background-image: url('../imagens/wallpaper.jpg');
+
 }
 
 .agendamento{
     margin:center;
     border:1px solid black;
+    opacity: 0.9;
+    background-color: #6E7B8B;
     margin-left:40%;
     margin-right:40%;
+    margin-top:5%;
     text-align: center;
+    color:white;
 }
 
 header{
-    background-color: purple;
+    background-color: #6E7B8B;
     text-align: center;
     color:white;
     width: 100%;
 }
 
 footer{
-    background-color: purple;
-    margin-top:100px;
+    background-color: #6E7B8B;
+    margin-top:17%;
     text-align: center;
     color:white;
     width: 100%;}
@@ -28,7 +34,7 @@ nav{
 }
 
 .tabela{
-    margin-top: 50px;
+    margin-top:5%;
     margin-left:30%;
     margin-right:30%;
     text-align: center;
@@ -38,4 +44,29 @@ nav{
 a{
     color:white;
     font-weight: bold;
+}
+
+a:hover{
+text-decoration:none;
+color:black;
+}
+
+.botao{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 23%;
+    margin-left: 23%;
+    opacity: 0.9;
+    background-color: gray;
+}
+.menu{
+    margin-top:5%;
+    text-align: center;
+}
+.menu button{
+    margin-top: 2%;
 }
