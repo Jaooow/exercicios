@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "pt-Br">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Jogo da velha</title>
+        <style>
+            *{
+                background-color: white;
+            }
+            input{
+                width:50px;
+                text-align:center;
+                background-color: white;
+            }
+            table{
+                border:1px solid black;
+                background-color: black;
+            }
+            caption{
+                color:black;
+                text-transform: bold;
+                font-size: 1em;
+            }
+        </style>
+        <script>
+            var cont = 0;
+            
+            function valida_jogada(campo)
+            {
+                cont++;
+                campo.value = campo.value.toUpperCase();
+                if(campo.value == "X" || campo.value == "O")
+                {
+                    if(cont%2==0)
+                    {
+                        if(campo.value != "X")
+                        {
+                            campo.value = "";
+                            cont--;
+                        }
+                        else
+                        {
+                            campo.value = "X";
+                            document.getElementById("msg").innerHTML = "Vez do Jogador O";
+                        }
+                    }
+                    if(cont%2!=0)
+                    {
+                        if(campo.value != "O")
+                        {
+                            campo.value = "";
+                            cont--;
+                        }
+                        else
+                        {
+                            campo.value = "O";
+                            document.getElementById("msg").innerHTML = "Vez do Jogador X";
+                        }    
+                    }   
+                }
+                else
+                {
+                    campo.value = "";
+                    alert("Jogada Inválida");
+                }
+            }
+
+            
+        </script>
+    </head>
+    <body>
+        <form name = "f">
+            <table name = "tabela">
+                <caption><i>Jogo da Velha</i></caption>
+                <tr>
+                    <td><input type = "text" name = "11"
+                            onblur= "valida_jogada(this);" /></td>
+                    <td><input type = "text" name = "12"
+                            onblur= "valida_jogada(this);" /></td>
+                    <td><input type = "text" name = "13"
+                            onblur= "valida_jogada(this);" /></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name = "21"
+                            onblur= "valida_jogada(this);" /></td>
+                    <td><input type = "text" name = "22"
+                            onblur= "valida_jogada(this);" /></td>
+                    <td><input type = "text" name = "23"
+                            onblur= "valida_jogada(this);" /></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name = "31"
+                            onblur= "valida_jogada(this);" /></td>
+                    <td><input type = "text" name = "32"
+                            onblur= "valida_jogada(this);" /></td>
+                    <td><input type = "text" name = "33"
+                            onblur= "valida_jogada(this);" /></td>
+                </tr>
+            </table>
+        </form>
+        <div id = "msg"></div>
+    </body>
+</html>
